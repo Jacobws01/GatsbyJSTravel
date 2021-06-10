@@ -1,0 +1,26 @@
+[
+	{
+		"img": "../assets/images/snowitem4.jpeg",
+		"alt": "French Alps",
+		"name": "French Alps",
+		"button": "View Destination"
+	},
+	{
+		"img": "../assets/images/pexels-photo-2880755.jpeg",
+		"alt": "Bahamas",
+		"name": "Bahamas",
+		"button": "View Destination"
+	},
+	{
+		"img": "../assets/images/sydney.jpeg",
+		"alt": "Sydney",
+		"name": "Sydney",
+		"button": "View Destination"
+	},
+	{
+		"img": "../assets/images/bora.jpeg",
+		"alt": "Bora Bora",
+		"name": "Bora Bora",
+		"button": "View Destination"
+	}
+]
