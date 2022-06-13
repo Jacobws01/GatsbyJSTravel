@@ -7,14 +7,14 @@ import { Button } from './Button'
 const Header = () => {
   return (
     <Nav>
-      <NavLink to='/'>TravelSite</NavLink>
+      
       <Bars />
       <NavMenu>
       	
       </NavMenu>
       <NavBtn>
       	<Button primary="true" round="true" to="/">
-      	Book a flight
+      	Contact Us
       	</Button>
       </NavBtn>
     </Nav>

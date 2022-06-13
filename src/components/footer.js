@@ -7,7 +7,7 @@ const Footer = () => {
 		<FooterContainer>
 			<FooterLinksWrapper>
 				<FooterDesc>
-					<h1>Travel</h1>
+					<h1>WeTravel</h1>
 					<p>Lorem Ipsum Hello cena you can not see me</p>
 				</FooterDesc>
 				<FooterLinkItems>
