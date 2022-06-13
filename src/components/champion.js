@@ -1,15 +1,39 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Button } from './Button'
+<<<<<<< Updated upstream
 import finaldesign from '../assets/images/thisisit.jpeg'
+=======
+import Video1 from '../assets/videos/hey.mp4'
+import { motion } from 'framer-motion'
+>>>>>>> Stashed changes
 
 const Champion = () => {
 	return (
 		<ChampionContainer>
 			<ChampBg>
+<<<<<<< Updated upstream
+=======
+				<VideoBg loading="eager" src={Video1} type="video/mp4"
+				autoPlay muted playsInline />
+>>>>>>> Stashed changes
 			</ChampBg>
 			<ChampContent>
+			 <motion.div initial="hidden" animate="visible" variants={{
+                    hidden: {
+                      scale: .4,
+                      opacity: 0
+                    },
+                    visible: {
+                      scale: 1,
+                      opacity: 1,
+                      transition: {
+                        delay: 3
+                      }
+                    },
+                  }}>
 				<ChampItems>
+<<<<<<< Updated upstream
 					<Champlogo>
 					</Champlogo>
 					<ChampHere>
@@ -20,7 +44,15 @@ const Champion = () => {
 						Contact Us
 						</Button>
 					</ChampHere>
+=======
+					<ChampH1>Welcome to the BCFED 60th Covention Accommodation site</ChampH1>
+					<ChampP>Book your hotel room at the special union rates, available here on an exclusive basis. Hotel rates are available from November 21-25, 2022.</ChampP>
+					<Button primary="true" big="true" round="true" to="/">
+						Make Reservation
+					</Button>
+>>>>>>> Stashed changes
 				</ChampItems>
+			  </motion.div>
 			</ChampContent>
 		</ChampionContainer>
 	)
@@ -74,7 +106,10 @@ const ChampContent = styled.div`
 	z-index: 3;
 	height: calc(100vh - 80px);
 	max-height: 100%;
-	padding: 0rem calc((100vw - 1300px) / 2);
+	position: absolute;
+	align-items: center;
+	top: 2px;
+	transform: rotate(-.5deg);
 `
 const ChampItems = styled.div`
 	display: flex;
@@ -113,10 +148,15 @@ const Champlogo = styled.div`
 
 `
 const ChampH1 = styled.h1`
+<<<<<<< Updated upstream
 	font-size: clamp(1.5rem, 6vw, 4rem);
 	margin-bottom: 1.5rem;
 	font-family: 'Oxygen', sans-serif;
 	font-weight: 700;
+=======
+	font-size: clamp(1rem, 3vw, 2.25rem);
+	margin-bottom: 27px;
+>>>>>>> Stashed changes
 	letter-spacing: 3px;
 	padding: 0 1rem;
 	color: #005993;
@@ -124,7 +164,7 @@ const ChampH1 = styled.h1`
 #172A36;
 `
 const ChampP = styled.p`
-	font-size: clamp(1rem, 3vw, 3rem);
+	font-size: clamp(0.5rem, 3vw, 1.75rem);
 	margin-bottom: 2rem;
 	font-weight: 700;
 	font-family: 'Oxygen', sans-serif;
