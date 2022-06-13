@@ -1,23 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Button } from './Button'
-import Video1 from '../assets/videos/backgroundvideo1.mp4'
-
+import finaldesign from '../assets/images/thisisit.jpeg'
 
 const Champion = () => {
 	return (
 		<ChampionContainer>
 			<ChampBg>
-				<VideoBg loading="eager" src={Video1} type="video/mp4"
-				autoPlay loop muted playsInline />
 			</ChampBg>
 			<ChampContent>
 				<ChampItems>
-					<ChampH1>Unreal Destinations</ChampH1>
-					<ChampP>Out of this world</ChampP>
-					<Button primary="true" big="true" round="true" to="/">
-						Travel Now
-					</Button>
+					<Champlogo>
+					</Champlogo>
+					<ChampHere>
+						<Button primary="true" big="true" round="true" to="/">
+						Learn More
+						</Button>
+						<Button primary="true" big="true" round="true" to="/">
+						Contact Us
+						</Button>
+					</ChampHere>
 				</ChampItems>
 			</ChampContent>
 		</ChampionContainer>
@@ -27,7 +29,7 @@ const Champion = () => {
 export default Champion
 
 const ChampionContainer = styled.div`
-	background: #0c0c0c;
+	background: #002535;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -35,7 +37,7 @@ const ChampionContainer = styled.div`
 	padding: 0 1rem;
 	position: relative;
 	margin-top: -80px;
-	color: #fff;
+	color: #000;
 
 	:before {
 		content: "";
@@ -45,6 +47,10 @@ const ChampionContainer = styled.div`
 		right: 0;
 		left: 0;
 		z-index: 2;
+		-webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+		transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+		-webkit-transform-origin: 0% 100%;
+		transform-origin: 0% 100%;
 		background: linear-gradient(
 			180deg, 
 			rgba(0, 0, 0, 0.2) 0%, 
@@ -63,12 +69,6 @@ const ChampBg = styled.div`
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-`
-const VideoBg = styled.video`
-	width: 100%
-	height: 100%
-	-o-object-fit: cover;
-	object-fit: cover;
 `
 const ChampContent = styled.div`
 	z-index: 3;
@@ -89,14 +89,46 @@ const ChampItems = styled.div`
 	line-hieght: 1.1;
 	font-weight: bold;
 `
+
+const ChampHere = styled.div`
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	max-height: 100%;
+	padding: 0;
+	color: #fff;
+	line-hieght: 1.1;
+	font-weight: bold;
+`
+
+const Champlogo = styled.div`
+	background: 
+		url(${finaldesign}) no-repeat center;
+		width: 500px;
+		z-index: -1;
+		height: 500px
+
+
+`
 const ChampH1 = styled.h1`
 	font-size: clamp(1.5rem, 6vw, 4rem);
 	margin-bottom: 1.5rem;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 700;
 	letter-spacing: 3px;
 	padding: 0 1rem;
+	color: #005993;
+	text-shadow: 1px 2px 
+#172A36;
 `
 const ChampP = styled.p`
 	font-size: clamp(1rem, 3vw, 3rem);
 	margin-bottom: 2rem;
-	font-weight: 400;
+	font-weight: 700;
+	font-family: 'Oxygen', sans-serif;
+	color: #005993;
+	text-shadow: 1px 2px 
+#172A36;
 `

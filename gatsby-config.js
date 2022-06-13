@@ -15,6 +15,16 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+        `Oxygen`,
+        `Oxygen\:400,700`,
+        ],
+        display: "swap",
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `video`,
