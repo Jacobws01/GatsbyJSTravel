@@ -13,7 +13,7 @@ const Header = () => {
       	
       </NavMenu>
       <NavBtn>
-      	<Button primary="true" round="true" to="/">
+      	<Button primary="true" round="true" to="https://wetravel.net/en/contact-us/">
       	Contact Us
       	</Button>
       </NavBtn>
