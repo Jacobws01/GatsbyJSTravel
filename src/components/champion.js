@@ -17,7 +17,7 @@ const Champion = () => {
 					<ChampP>Book your hotel room at the special union rates, available here on an exclusive basis.
 					 Hotel rates are available from November 21-25,2022</ChampP>
 					<Button primary="true" big="true" round="true" to="https://wetravel.eventsair.com/bc-federation-of-labour-convention/bcfed-60">
-						Travel Now
+						Union Hotels
 					</Button>
 					<Champlogo />
 				</ChampItems>
@@ -85,6 +85,9 @@ const Champlogo = styled.div`
 	filter: brightness(1.5);
 
 	@media screen and (max-width: 1200px) {
+  	display: none;
+
+  	@media screen and (max-height: 900px) {
   	display: none;
 `
 
