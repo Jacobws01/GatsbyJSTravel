@@ -1,17 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Button } from './Button'
-import Video1 from '../assets/videos/backgroundvideo1.mp4'
+import Image12 from '../assets/images/heyyyy.jpg'
+import Wetravellogo from '../assets/images/heyyy113.png'
 
 
 const Champion = () => {
 	return (
 		<ChampionContainer>
-			<ChampBg>
-				<VideoBg loading="eager" src={Video1} type="video/mp4"
-				autoPlay muted playsInline />
+			<ChampBg> 
 			</ChampBg>
 			<ChampContent>
+
 				<ChampItems>
 					<ChampH1>Welcome to the BCFED 60TH Convention Accommodation site</ChampH1>
 					<ChampP>Book your hotel room at the special union rates, available here on an exclusive basis.
@@ -19,6 +19,7 @@ const Champion = () => {
 					<Button primary="true" big="true" round="true" to="/">
 						Travel Now
 					</Button>
+					<Champlogo />
 				</ChampItems>
 			</ChampContent>
 		</ChampionContainer>
@@ -47,8 +48,8 @@ const ChampionContainer = styled.div`
 		z-index: 2;
 		background: linear-gradient(
 			180deg, 
-			rgba(0, 0, 0, 0.2) 0%, 
-			rgba(0, 0, 0, 0.6) 100%
+			rgba(0, 0, 0, 0.1) 0%, 
+			rgba(0, 0, 0, 0.3) 100%
 		  ),
 			linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
 	}
@@ -62,13 +63,31 @@ const ChampBg = styled.div`
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	background: linear-gradient(
+		 180deg,
+		 rgba(0, 0, 0, 0.3) 0%,
+		 rgba(0, 0, 0, 0.4) 33%,
+		 rgba(0, 0, 0, 0.5) 63%
+		),
+		url(${Image12}) no-repeat center;
 `
-const VideoBg = styled.video`
-	width: 100%
-	height: 100%
-	-o-object-fit: cover;
-	object-fit: cover;
+
+const Champlogo = styled.div`
+	background: 
+		url(${Wetravellogo}) no-repeat center;
+		width: 500px;
+		z-index: -1;
+		height: 500px;
+	position: absolute;
+	margin-right: 9px;
+	bottom: 4px;
+	align-items: center;
+	filter: brightness(1.5);
+
+	@media screen and (max-width: 1200px) {
+  	display: none;
 `
+
 const ChampContent = styled.div`
 	z-index: 3;
 	height: calc(100vh - 80px);
@@ -89,15 +108,13 @@ const ChampItems = styled.div`
 	font-weight: bold;
 `
 const ChampH1 = styled.h1`
-	font-size: clamp(2rem, 4.5vw, 3rem);
+	font-size: clamp(1.5rem, 4vw, 2.25rem);
 	margin-bottom: 1.5rem;
 	letter-spacing: 3px;
 	padding: 0 1rem;
-	-webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
 `
 const ChampP = styled.p`
-	font-size: clamp(1rem, 3vw, 2rem);
+	font-size: clamp(.75rem, 3vw, 1.5rem);
 	margin-bottom: 2rem;
 	font-weight: 400;
 `
