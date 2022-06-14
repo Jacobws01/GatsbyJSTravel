@@ -14,8 +14,7 @@ const Champion = () => {
 
 				<ChampItems>
 					<ChampH1>Welcome to the BCFED 60TH Convention Accommodation site</ChampH1>
-					<ChampP>Book your hotel room at the special union rates, available here on an exclusive basis.
-					 Hotel rates are available from November 21-25,2022</ChampP>
+					<ChampP>Book your Union hotel room at the special union rates, available exclusivly here. Rates available November 21-25, 2022</ChampP>
 					<Button primary="true" big="true" round="true" to="https://wetravel.eventsair.com/bc-federation-of-labour-convention/bcfed-60">
 						Union Hotels
 					</Button>
@@ -117,7 +116,7 @@ const ChampH1 = styled.h1`
 	padding: 0 1rem;
 `
 const ChampP = styled.p`
-	font-size: clamp(.75rem, 3vw, 1.5rem);
+	font-size: clamp(.5rem, 3vw, 1.25rem);
 	margin-bottom: 2rem;
 	font-weight: 400;
 `
