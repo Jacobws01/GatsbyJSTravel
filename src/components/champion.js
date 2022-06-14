@@ -85,7 +85,7 @@ const Champlogo = styled.div`
 
 	@media screen and (max-width: 1200px) {
   	display: none;
-
+}
   	@media screen and (max-height: 900px) {
   	display: none;
 `
